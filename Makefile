@@ -9,7 +9,7 @@ else
 endif
 
 CC=gcc
-LCC_CFLAGS=-O2 -Wall -fno-strict-aliasing -MMD
+LCC_CFLAGS=-O2 -Wall -fno-strict-aliasing -MMD -std=gnu11
 LDFLAGS=
 LD=gcc
 AR=ar
@@ -39,7 +39,7 @@ endif
 all: q3rcc lburg q3cpp q3lcc
 
 q3rcc: makedirs $(BD)q3rcc$(E)
-lburg: makedirs $(BD)lburg$(E)
+lburg: makedirs $(BD)lburg/lburg$(E)
 q3cpp: makedirs $(BD)q3cpp$(E)
 q3lcc: makedirs $(BD)q3lcc$(E)
 

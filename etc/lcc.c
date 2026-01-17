@@ -518,7 +518,7 @@ static void help(void) {
 /* initinputs - if LCCINPUTS or include is defined, use them to initialize various lists */
 static void initinputs(void) {
 	char *s = getenv("LCCINPUTS");
-	List b;
+	List b, list;
 
 	if (s == 0 && (s = inputs)[0] == 0)
 		s = ".";
